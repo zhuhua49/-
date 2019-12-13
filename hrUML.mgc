@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.action.salary_payment_registerAction" x="208" y="1357">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.vo.Payment_form"
+            endpointName="payment_form" kind="Simple"/>
+        <Association destinationClassName="com.vo.Payment"
+            endpointName="payment" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.salary_standard_querySeeAction" x="1956" y="437">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.vo.Salary_standard"
+            endpointName="salary_standard" kind="Simple"/>
+        <Association destinationClassName="com.po.salary_standardPO"
+            endpointName="salary_standardAll" kind="Simple"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.archives_recoverSeeAction" x="2036" y="1257">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.po.archivesPO"
+            endpointName="archivesAll" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.salary_standardSee1Action" x="2004" y="995">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.po.salary_standardPO"
+            endpointName="salary_standardOne" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.salary_standard_reviewSeeAction" x="1528" y="105">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.po.salary_standardPO"
+            endpointName="salary_standardAll" kind="Simple"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.salary_payment_reviewAction" x="1220" y="83">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.vo.Payment_form"
+            endpointName="payment_form" kind="Simple"/>
+        <Association destinationClassName="com.vo.Payment"
+            endpointName="payment" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.vo.Payment_form" x="550" y="33">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.action.archives_updateAction" x="268" y="1057">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.vo.Archives"
+            endpointName="archives" kind="Simple"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.vo.Archives_query" x="309" y="26">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.action.archivesSee1Action" x="1794" y="227">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.po.salary_standardPO"
+            endpointName="salary_standardAll" kind="Simple"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.po.archivesPO"
+            endpointName="archivesOne" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+        <Communication destinationClassName="com.po.salary_standardPO"/>
+        <Communication destinationClassName="com.po.archivesPO"/>
+    </Class>
+    <Class name="com.po.paymentPO" x="1598" y="1478">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.vo.Salary_standard" x="528" y="406">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.action.paymentSeeAction" x="1394" y="281">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.po.paymentPO"
+            endpointName="paymentAll" kind="Simple"/>
+        <Association destinationClassName="com.vo.Payment"
+            endpointName="payment" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.archives_querySeeAction" x="628" y="1351">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.po.archivesPO"
+            endpointName="archivesAll" kind="Simple"/>
+        <Association destinationClassName="com.vo.Archives_query"
+            endpointName="archives_query" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.po.salary_standardPO" x="236" y="1512">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.action.payment_formSee1Action" x="1988" y="837">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.po.paymentPO"
+            endpointName="paymentAll" kind="Simple"/>
+        <Association destinationClassName="com.po.payment_formPO"
+            endpointName="payment_formOne" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.salary_payment_reviewSeeAction" x="1968" y="591">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.po.payment_formPO"
+            endpointName="payment_formAll" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.archives_reviewSeeAction" x="1538" y="1333">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.po.archivesPO"
+            endpointName="archivesAll" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.salary_payment_registerSeeAction" x="1592" y="1177">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.po.payment_formPO"
+            endpointName="payment_formAll" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.vo.Payment" x="839" y="38">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.action.archives_registerAction" x="1256" y="1273">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.vo.Archives"
+            endpointName="archives" kind="Simple"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.archives_recoverAction" x="1718" y="1059">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.service.ModelBean" x="931" y="663">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.dao.HibernateServiceProvider"
+            endpointName="hsp" kind="Simple"/>
+        <Communication destinationClassName="com.po.paymentPO"/>
+        <Communication destinationClassName="com.vo.Salary_standard"/>
+        <Communication destinationClassName="com.po.salary_standardPO"/>
+        <Communication destinationClassName="com.vo.Payment_form"/>
+        <Communication destinationClassName="com.dao.HibernateServiceProvider"/>
+        <Communication destinationClassName="com.vo.Archives_query"/>
+        <Communication destinationClassName="com.vo.Archives"/>
+        <Communication destinationClassName="com.vo.Payment"/>
+        <Communication destinationClassName="com.po.archivesPO"/>
+        <Communication destinationClassName="com.po.payment_formPO"/>
+    </Class>
+    <Class name="com.action.archives_deleteAction" x="1744" y="905">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.salary_standard_reviewAction" x="1124" y="445">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.vo.Salary_standard"
+            endpointName="salary_standard" kind="Simple"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.dao.HibernateServiceProvider" x="1844" y="735">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.po.mechanism_jobPO" x="1894" y="20">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.vo.Archives" x="32" y="26">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.vo.Mechanism_job" x="310" y="265">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.action.paymentNewAction" x="1514" y="423">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.vo.Payment_form"
+            endpointName="payment_form" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.po.payment_formPO" x="980" y="1412">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.action.salary_standard_updateAction" x="1632" y="567">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.vo.Salary_standard"
+            endpointName="salary_standard" kind="Simple"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.salary_standard_registerAction" x="914" y="1275">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.vo.Salary_standard"
+            endpointName="salary_standard" kind="Simple"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.action.archives_reviewAction" x="51" y="1204">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.vo.Archives"
+            endpointName="archives" kind="Simple"/>
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </Class>
+    <Class name="com.po.archivesPO" x="2274" y="160">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

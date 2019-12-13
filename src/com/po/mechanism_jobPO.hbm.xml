@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.po"> 
+	<class name="mechanism_jobPO"  table="mechanism_job"> 
+		<id name="ID" column="ID" type="long"> 
+			<generator class="native"/> 
+		</id> 
+		<property name="IDs" column="IDs" type="long" />
+		<property name="name" column="name" type="string" />
+		<property name="type" column="type" type="string" />		  		
+	</class> 
+</hibernate-mapping>
+
+

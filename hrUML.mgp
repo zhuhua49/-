@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PackageAnalysis>
+    <Package name="com.action" x="345" y="289">
+        <DependencyLink destination="com.po"/>
+        <DependencyLink destination="com.vo"/>
+        <DependencyLink destination="com.service"/>
+    </Package>
+    <Package name="com.dao" x="715" y="268"/>
+    <Package name="com.po" x="366" y="387"/>
+    <Package name="com.service" x="708" y="382">
+        <DependencyLink destination="com.po"/>
+        <DependencyLink destination="com.vo"/>
+        <DependencyLink destination="com.dao"/>
+    </Package>
+    <Package name="com.vo" x="560" y="282"/>
+</PackageAnalysis>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass name="com.service.ModelBean" x="233" y="409">
+        <Association
+            destinationClassName="com.dao.HibernateServiceProvider"
+            endpointName="hsp" kind="Simple"/>
+        <Communication destinationClassName="com.vo.Salary_standard"/>
+        <Communication destinationClassName="com.dao.HibernateServiceProvider"/>
+        <Communication destinationClassName="com.vo.Payment_form"/>
+        <Communication destinationClassName="com.vo.Archives_query"/>
+        <Communication destinationClassName="com.vo.Archives"/>
+        <Communication destinationClassName="com.vo.Payment"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.action.archives_deleteAction" x="78" y="65">
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.vo.Salary_standard" x="771" y="427"/>
+    <CommunicationClass name="com.action.archives_querySeeAction"
+        x="320" y="138">
+        <Association destinationClassName="com.service.ModelBean"
+            endpointName="service" kind="Simple"/>
+        <Association destinationClassName="com.vo.Archives_query"
+            endpointName="archives_query" kind="Simple"/>
+        <Communication destinationClassName="com.service.ModelBean"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.dao.HibernateServiceProvider" x="220" y="231"/>
+    <CommunicationClass name="com.vo.Payment_form" x="870" y="579"/>
+    <CommunicationClass name="com.vo.Archives_query" x="644" y="119"/>
+    <CommunicationClass name="com.vo.Archives" x="504" y="352"/>
+    <CommunicationClass name="com.vo.Mechanism_job" x="46" y="307"/>
+    <CommunicationClass name="com.vo.Payment" x="67" y="709"/>
+</ClassDiagram>

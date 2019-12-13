@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.po"> 
+	<class name="payment_formPO"  table="payment_form"> 
+		<id name="paymentID" column="paymentID" type="long"> 
+			<generator class="native"/> 
+		</id> 
+		<property name="mechanism1" column="mechanism1" type="string" />
+		<property name="mechanism2" column="mechanism2" type="string" />
+		<property name="mechanism3" column="mechanism3" type="string" />
+		<property name="numberall" column="numberall" type="long" />
+		<property name="total" column="total" type="float" />
+		<property name="actual_sum" column="actual_sum" type="float" />
+		<property name="state" column="state" type="string" />		  		
+		<property name="registrar" column="registrar" type="string" />
+		<property name="registration_time" column="registration_time" type="java.sql.Timestamp" />
+	</class> 
+</hibernate-mapping>
+
+

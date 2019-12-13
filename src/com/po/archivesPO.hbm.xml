@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.po"> 
+	<class name="archivesPO"  table="archives"> 
+		<id name="uersID" column="uersID" type="long"> 
+			<generator class="native"/> 
+		</id> 
+		<property name="archivesID" column="archivesID" type="string" /> 
+		<property name="mechanism1" column="mechanism1" type="string" />
+		<property name="mechanism2" column="mechanism2" type="string" />
+		<property name="mechanism3" column="mechanism3" type="string" />
+		<property name="job_classification" column="job_classification" type="string" />
+		<property name="job_name" column="job_name" type="string" />
+		<property name="job_title" column="job_title" type="string" />
+		<property name="uers_name" column="uers_name" type="string" />
+		<property name="sex" column="sex" type="string" />
+		<property name="Email" column="Email" type="string" />
+		<property name="telephone" column="telephone" type="string" />
+		<property name="QQ" column="QQ" type="string" />
+		<property name="phone" column="phone" type="string" />
+		<property name="address" column="address" type="string" />
+		<property name="postcode" column="postcode" type="string" />
+		<property name="nationality" column="nationality" type="string" />
+		<property name="homeplace" column="homeplace" type="string" />
+		<property name="date_of_birth" column="date_of_birth" type="java.sql.Date" /> 
+		<property name="nation" column="nation" type="string" />
+		<property name="religion" column="religion" type="string" />
+		<property name="political" column="political" type="string" />
+		<property name="IDcard" column="IDcard" type="string" />
+		<property name="social_card" column="social_card" type="string" />
+		<property name="age" column="age" type="long" />
+		<property name="education" column="education" type="string" />
+		<property name="major" column="major" type="string" />
+		<property name="standardID" column="standardID" type="long" />
+		<property name="bank" column="bank" type="string" />
+		<property name="account" column="account" type="string" />
+		<property name="specialty" column="specialty" type="string" />
+		<property name="hobby" column="hobby" type="string" />
+		<property name="record" column="record" type="string" />
+		<property name="family" column="family" type="string" />
+		<property name="note" column="note" type="string" />
+		<property name="registrar" column="registrar" type="string" />
+		<property name="registration_time" column="registration_time" type="java.sql.Timestamp" />
+		<property name="photo" column="photo" type="string" />
+		<property name="state" column="state" type="string" />		  		
+	</class> 
+</hibernate-mapping>
+
+

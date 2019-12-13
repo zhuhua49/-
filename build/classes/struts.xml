@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+ 	     "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+ 	     "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.ui.theme" value="simple" /> 	
+	
+	<include file="struts-default.xml"/>
+	
+	<package name="Struts2" extends="struts-default">
+		<!-- 提交档案登记表单，完成登记 -->
+		<action name="archives_register" class="com.action.archives_registerAction">
+    		<result name="success">/archives_register/archives_registerSuccess.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 查询待复核的档案，并显示 -->
+		<action name="archives_reviewSee" class="com.action.archives_reviewSeeAction">
+    		<result name="success">/archives_review/archives_reviewSee.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 显示需要审核的一份档案 -->
+		<action name="archives_reviewSee1" class="com.action.archivesSee1Action">
+    		<result name="success">/archives_review/archives_review.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交档案审核表单，完成审核 -->
+		<action name="archives_review" class="com.action.archives_reviewAction">
+    		<result name="success">/archives_review/archives_reviewSuccess.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交档案查询表单，显示查询结果 -->
+		<action name="archives_querySee" class="com.action.archives_querySeeAction">
+    		<result name="success">/archives_query/archives_querySee.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 显示一份档案 -->
+		<action name="archives_querySee1" class="com.action.archivesSee1Action">
+    		<result name="success">/archives_query/archives_querySuccess.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 显示需要变更的一份档案 -->
+		<action name="archives_updateSee1" class="com.action.archivesSee1Action">
+    		<result name="success">/archives_update/archives_update.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交档案变更表单，完成变更 -->
+		<action name="archives_update" class="com.action.archives_updateAction">
+    		<result name="success">/archives_update/archives_updateSuccess.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交档案查询表单，显示查询结果 -->
+		<action name="archives_deleteSee" class="com.action.archives_querySeeAction">
+    		<result name="success">/archives_delete/archives_deleteSee.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 删除选择的一份档案 -->
+		<action name="archives_delete" class="com.action.archives_deleteAction">
+    		<result name="success">/archives_delete/archives_deleteSuccess.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 查询已删除的档案，并显示 -->
+		<action name="archives_recoverSee" class="com.action.archives_recoverSeeAction">
+    		<result name="success">/archives_delete/archives_recoverSee.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 恢复选择的一份档案 -->
+		<action name="archives_recover" class="com.action.archives_recoverAction">
+    		<result name="success">/archives_delete/archives_recoverSuccess.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交薪酬标准登记表单，完成登记 -->
+		<action name="salary_standard_register" class="com.action.salary_standard_registerAction">
+    		<result name="success">/salary_standard/register/registerSuccess.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 查询待复核的薪酬标准，并显示 -->
+		<action name="salary_standard_reviewSee" class="com.action.salary_standard_reviewSeeAction">
+    		<result name="success">/salary_standard/review/reviewSee.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 显示需要审核的一份薪酬标准 -->
+		<action name="salary_standard_reviewSee1" class="com.action.salary_standardSee1Action">
+    		<result name="success">/salary_standard/review/review.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交薪酬标准审核表单，完成审核 -->
+		<action name="salary_standard_review" class="com.action.salary_standard_reviewAction">
+    		<result name="success">/salary_standard/review/reviewSuccess.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交薪酬标准查询表单，显示查询结果 -->
+		<action name="salary_standard_querySee" class="com.action.salary_standard_querySeeAction">
+    		<result name="success">/salary_standard/query/querySee.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 显示一份薪酬标准 -->
+		<action name="salary_standard_querySee1" class="com.action.salary_standardSee1Action">
+    		<result name="success">/salary_standard/query/querySuccess.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 显示需要变更的一份薪酬标准 -->
+		<action name="salary_standard_updateSee1" class="com.action.salary_standardSee1Action">
+    		<result name="success">/salary_standard/update/update.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交薪酬标准变更表单，完成变更 -->
+		<action name="salary_standard_update" class="com.action.salary_standard_updateAction">
+    		<result name="success">/salary_standard/update/updateSuccess.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 打开档案登记页 -->
+		<action name="archives_registerSee" class="com.action.salary_standard_querySeeAction">
+    		<result name="success">/archives_register/archives_register.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 新建薪酬发放单 -->
+		<action name="paymentNew" class="com.action.paymentNewAction">
+    		<result name="success">/salary_payment/register/newSuccess.jsp</result>
+    		<result name="error">/salary_payment/register/newFail.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 查询新建的薪酬发放单 -->
+		<action name="salary_payment_registerSee" class="com.action.salary_payment_registerSeeAction">
+    		<result name="success">/salary_payment/register/registerSee.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 查询新建的薪酬发放单明细 -->
+		<action name="salary_payment_registerOne" class="com.action.payment_formSee1Action">
+    		<result name="success">/salary_payment/register/register.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交薪酬发放单明细，完成登记 -->
+		<action name="salary_payment_register" class="com.action.salary_payment_registerAction">
+    		<result name="success">/salary_payment/register/registerSuccess.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 查询待复核的薪酬发放单 -->
+		<action name="salary_payment_reviewSee" class="com.action.salary_payment_reviewSeeAction">
+    		<result name="success">/salary_payment/review/reviewSee.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 查询待复核的薪酬发放单明细 -->
+		<action name="salary_payment_reviewOne" class="com.action.payment_formSee1Action">
+    		<result name="success">/salary_payment/review/review.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交薪酬发放单明细，完成复核 -->
+		<action name="salary_payment_review" class="com.action.salary_payment_reviewAction">
+    		<result name="success">/salary_payment/review/reviewSuccess.jsp</result>    
+    		<result name="input">/input.jsp</result>
+		</action>
+		
+		<!-- 提交薪酬发放查询表单，显示查询结果-->
+		<action name="salary_payment_query" class="com.action.paymentSeeAction">
+    		<result name="success">/salary_payment/query/querySuccess.jsp</result>
+    		<result name="input">/input.jsp</result>
+		</action>
+	</package>
+</struts>     

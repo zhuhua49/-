@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.po"> 
+	<class name="paymentPO"  table="payment">
+		<id name="ID" column="ID" type="long"> 
+			<generator class="native"/> 
+		</id>
+		<property name="archivesID" column="archivesID" type="string" />
+		<property name="uers_name" column="uers_name" type="string" />
+		<property name="paymentID" column="paymentID" type="long" />
+		<property name="base_pay" column="base_pay" type="float" />
+		<property name="travel_allowance" column="travel_allowance" type="float" />
+		<property name="lunch_allowance" column="lunch_allowance" type="float" />
+		<property name="communication_allowance" column="communication_allowance" type="float" />
+		<property name="endowment_insurance" column="endowment_insurance" type="float" />
+		<property name="medical_insurance" column="medical_insurance" type="float" />
+		<property name="unemployment_insurance" column="unemployment_insurance" type="float" />
+		<property name="housing_fund" column="housing_fund" type="float" />
+		<property name="reward" column="reward" type="float" />
+		<property name="fine" column="fine" type="float" />
+		<property name="total" column="total" type="float" />
+		<property name="actual_sum" column="actual_sum" type="float" />		
+		<property name="state" column="state" type="string" />		  		
+		<property name="registration_time" column="registration_time" type="java.sql.Timestamp" />
+	</class> 
+</hibernate-mapping>
+
+
